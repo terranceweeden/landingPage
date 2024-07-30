@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("chess_club.jpg");
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  @media screen and (max-width: 600px) {
+    position: absolute;
+    top: 33%;
+  }
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("dragonfly.png");
+  /* background-color: white; */
+  max-width: 300px;
+  margin: 1%;
+  padding: 5%;
+}
+h1 {
+  color: white;
+}
+
+input[type="text"]:focus,
+input[type="name"]:focus {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background-color: #f1f1f1;
+  outline: 100%;
+}
+
+input[type="text"]:focus,
+input[type="name"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
